@@ -4,60 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Authenticator</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style2.css" />
+    <script src="./signup.js" defer></script>
   </head>
   <body>
-    <div class="container" id="login-div">
-      <h2>Login</h2>
-      <input
-        type="email"
-        id="login-email"
-        class="text-field"
-        name="login-email"
-        placeholder="Email"
-        required
-      /><br />
-      <input
-        type="password"
-        id="login-password"
-        class="text-field"
-        name="login-password"
-        placeholder="Password"
-        required
-      /><br />
-      <button id="login-btn" class="btn-style">Login</button><br />
-      <button id="reg-btn" class="an-btn">
-        Don't have an account? REGISTER</button
-      ><br />
-    </div>
-
-    <div class="container" id="register-div">
-      <h2>Register</h2>
-      <input
-        type="email"
-        id="register-email"
-        class="text-field"
-        name="register-email"
-        placeholder="Email"
-        required
-      /><br />
-      <input
-        type="password"
-        id="register-password"
-        class="text-field"
-        name="register-password"
-        placeholder="Password"
-        required
-      /><br />
-      <button id="register-btn" class="btn-style">Register</button><br />
-      <button id="log-btn" class="an-style">Have an account?LOGIN</button><br />
-    </div>
-    <div id="results">
-      <h3 id="result-box"></h3>
-      <br />
-      <button id="log-out-btn" class="btn-style">LOG OUT</button>
+    <div class="login-container">
+      <div id="Main">
+        <h2>Sign In</h2>
+        <input id="email" type="text" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
+        <button id="submit">Login</button>
+        <p><span></span></p>
+        <button id="sign-up">Sign Up</button>
+      </div>
+      <div id="create-acc">
+        <h2>Create an Account</h2>
+        <input id="email-signup" type="text" placeholder=" Email *" />
+        <input
+          id="confirm-email-signup"
+          type="text"
+          placeholder="Confirm Email *"
+        />
+        <input id="password-signup" type="text" placeholder=" Password *" />
+        <input
+          id="confirm-password-signup"
+          type="text"
+          placeholder=" Confirm Password *"
+        />
+        <button id="create-acc-btn">Create Account</button>
+        <button id="return-btn">Return to Login</button>
+      </div>
     </div>
   </body>
 </html>
